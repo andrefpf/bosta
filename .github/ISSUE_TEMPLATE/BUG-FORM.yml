@@ -3,7 +3,6 @@ description: File a bug report.
 labels: ["bug"]
 body:
   - type: markdown
-
   - type: textarea
     id: what-happened
     attributes:
@@ -12,7 +11,6 @@ body:
       placeholder: Tell us what you see!
     validations:
       required: true
-
   - type: dropdown
     id: so
     attributes:
@@ -24,7 +22,6 @@ body:
       default: 0
     validations:
       required: true
-
   - type: dropdown
     id: version
     attributes:
@@ -37,14 +34,12 @@ body:
       default: 2
     validations:
       required: false
-
   - type: textarea
     id: logs
     attributes:
       label: Relevant log output
       description: Please copy and paste any relevant log output. Our logs are reported in "~/.vibra.log".
       render: shell
-
   - type: upload
     id: screenshots
     attributes:
@@ -52,7 +47,6 @@ body:
       description: If applicable, add screenshots or screen recordings to help explain your problem.
     validations:
       required: false
-
   - type: input
     id: contact
     attributes:
