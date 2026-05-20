@@ -1,6 +1,5 @@
 name: Bug Report
 description: File a bug report.
-title: ""
 labels: ["bug"]
 body:
   - type: markdown
@@ -16,13 +15,6 @@ body:
       value: "A bug happened!"
     validations:
       required: true
-  - type: upload
-    id: screenshots
-    attributes:
-      label: Upload screenshots
-      description: If applicable, add screenshots to help explain your problem.
-    validations:
-      required: false
   - type: dropdown
     id: so
     attributes:
@@ -52,6 +44,13 @@ body:
       label: Relevant log output
       description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
       render: shell
+  - type: upload
+    id: screenshots
+    attributes:
+      label: Upload screenshots
+      description: If applicable, add screenshots to help explain your problem.
+    validations:
+      required: false
   - type: input
     id: contact
     attributes:
