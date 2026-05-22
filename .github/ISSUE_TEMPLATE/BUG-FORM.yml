@@ -41,7 +41,7 @@ body:
     id: logs
     attributes:
       label: Relevant log output
-      description: Please copy and paste any relevant log output. Our logs are reported in "~/.vibra.log".
+      description: Please copy and paste any relevant log output.
       render: shell
 
   - type: upload
