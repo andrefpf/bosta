@@ -36,7 +36,7 @@ def main():
     for svg_path in svg_base_path.glob("*.svg"):
         png_path = png_base_path / svg_path.with_suffix(".png").name
         svg_to_png(svg_path, png_path)
-    zip_folders("data/png", "data/svg", output="data/result.zip")
+    zip_folders("data/png", "data/svg", output="data/vibra_open_pulse_logos.zip")
 
 
 if __name__ == "__main__":
